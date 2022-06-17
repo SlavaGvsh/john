@@ -162,7 +162,7 @@
     }
   }
 }
- 
+ //-------------------------------section post
 
 .post{
   background: var(--bg-color-section);
@@ -228,9 +228,60 @@
       }
     }
   }
-
+}
+ //-------------------------------section featured-works
+.featured-works{
+  padding: 36px 0 83px;
+  &__title{
+    display: inline-block;
+    font-size: 26px;
+    line-height: 1.5;
+    margin-bottom: 43px;
+  }
   
+}
+.works-item{
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 31px;
+  &__img{
+    flex: 0 0 246px;
+    margin-right: 18px;
+    border-radius: 6px;
+  }
+  &__body{
+    flex: 1 1 auto;
+    
+    
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 26px;
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+    .year{
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #FFFFFF;
+      background-color: #142850;
+      padding: 3px 10px;
+      border-radius: 16px;
+      margin-right: 26px;
+    }
+    .categories{
+      font-size: 20px;
+      line-height: 1.5;
+      color: #8695A4;
+    }
 
+  }
 }
 
 
