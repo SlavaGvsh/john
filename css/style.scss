@@ -120,6 +120,7 @@
 }
 .main{
   flex: 1 1 auto;
+  margin-bottom: 52px;
 }
  .info{
   padding: 71px 0 79px 0;
@@ -231,7 +232,7 @@
 }
  //-------------------------------section featured-works
 .featured-works{
-  padding: 36px 0 83px;
+  padding: 36px 0 0;
   &__title{
     display: inline-block;
     font-size: 26px;
@@ -283,6 +284,20 @@
 
   }
 }
+//-------------------------------footer
+#footer{
+ text-align: center;
+ margin: 51px 0 54px;
+ .socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 26px;
+}
+
+}
 
 
-   
+
+
