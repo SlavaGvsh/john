@@ -88,13 +88,14 @@
  :root{
   --bg-color-section: #EDF7FA;
  }
- 
+ .title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.4;
+ }
 
-[class*="__container"] {
-   max-width: 888px;
-   margin: 0 auto;
-   padding: 0px 15px;
-}
+
 //-------------------------------Header
 [class*="__container1"] {
    max-width: 1064px;
@@ -123,6 +124,9 @@
       font-size: 20px;
       line-height: 1.5;
       color: #000000;
+   }
+   .activ{
+    color: #FF6464;
    }
 }
 /* media queries */ 
@@ -154,6 +158,11 @@
   flex: 1 1 auto;
   margin-bottom: 52px;
 }
+[class*="__container"] {
+  max-width: 888px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
 //-------------------------------section info
  .info{
   padding: 71px 0 79px 0;
@@ -165,10 +174,7 @@
     flex: 1 1 auto;
     margin-bottom: 19px;
     .info__title{
-      font-style: normal;
-      font-weight: 700;
-      font-size: 44px;
-      line-height: 1.4;
+      
       margin: 0 0 40px 0;
     }
     .info__text{
@@ -482,4 +488,104 @@
 }
 
 
+//-------------------------------BLOG
 
+[class*="__container-blog"] {
+  max-width: 712px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.blog {
+  
+  &__title {
+    margin-bottom: 55px;
+  }
+}
+
+
+.blog-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 32px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.5;
+  }
+}
+.blog-item__info{
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: 15px;
+  li{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: 20px;
+    line-height: 1.5;
+    &:not(:first-child)::before{
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 20px;
+      top: 3px;
+      left: 0;
+      background-color: #21243D;
+    }
+    &:not(:first-child){
+      padding: 0 0 0 20px;
+      color: #8695A4;
+
+    }
+    &:first-child{
+      margin-right: 26px;
+      padding: 0;
+    }
+    
+  }
+  p{
+    margin-bottom: 29px;
+  }
+
+}
+/* media queries */ 
+@media(max-width: 620px){
+  .title{
+    font-size: 30px;
+  }
+  .blog__title{
+    margin-bottom: 33px;
+  }
+  .blog-item{
+    margin-bottom: 18px;
+    &__title{
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    &__info{
+      margin-bottom: 17px;
+      li{
+      font-size: 16px;
+        &:not(:first-child)::before{
+          height: 18px;
+          top: 6px;
+        }
+        &:not(:first-child){
+          padding: 0 0 0 15px;
+        }
+        &:first-child{
+          margin-right: 14px;
+        }
+        p{
+          margin-bottom: 24px;
+        }
+      }
+
+    }
+
+  }
+
+}
