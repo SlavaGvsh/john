@@ -8,27 +8,191 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="/css/style.css">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
    <title>John</title>
 </head>
 
 <body>
    <div id="wrapper">
-      <header class="header">
+      <header id="header">
          <div class="header__container1">
+            <div class="menu-btn-holder">
+               <span class="menu-btn">
+                  <span class="material-icons">
+                     menu
+                  </span>
+               </span>
+            </div>
             <nav class="header__menu menu">
                <ul class="menu__list">
-                  <li class="menu__item"><a href="#" class="menu__link"></a>Works</li>
-                  <li class="menu__item"><a href="#" class="menu__link"></a>Blog</li>
-                  <li class="menu__item"><a href="#" class="menu__link"></a>Contact</li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link activ">Home</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="works.html" class="menu__link ">Works</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="blog.html" class="menu__link">Blog</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">Contact</a>
+                  </li>
                </ul>
             </nav>
          </div>
       </header>
-      <main class="main">2</main>
-      <footer class="footer">3</footer>
+      <main id="main">
+         <section class="info">
+            <div class="info__container">
+               <div class="info__body">
+                  <div class="info__content">
+                     <h1 class="info__title title">Hi, I am John, Creative Technologist</h1>
+                     <p class="info__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                     </p>
+                     <a href="#" class="btn">Download resume</a>
+                  </div>
+                  <div class="info__avatar">
+                     <div class="info__avatar-holder">
+                        <img src="/img/avatar.jpg" alt="Avatar">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="post">
+            <div class="post__container">
+               <div class="post__body">
+                  <div class="post__header">
+                     <div class="post__header-title">Recent posts</div>
+                     <a href="#" class="post__header-link">View all</a>
+                  </div>
+                  <div class="post__items">
+                     <div class="post__item">
+                        <h2 class="post__item-title"><a href="#">Making a design system from scratch</a></h2>
+                        <ul class="post__item-info">
+                           <li>12 Feb 2020</li>
+                           <li>Design, Pattern</li>
+                        </ul>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                           consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                     </div>
+                     <div class="post__item">
+                        <h2 class="post__item-title"><a href="#">Creating pixel perfect icons in Figma</a></h2>
+                        <ul class="post__item-info">
+                           <li>12 Feb 2020</li>
+                           <li>Figma, Icon Design</li>
+                        </ul>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                           consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+         <section class="featured-works">
+            <div class="featured-works__container">
+               <div class="featured-works__title">Featured works</div>
+               <div class="featured-works__items">
+                  <div class="works">
+                     <article class="works-item">
+                        <div class="works-item__img">
+                           <a href="#">
+                              <img src="/img/section featured-works/img-works1.jpg" alt="Works№1">
+                           </a>
+                        </div>
+                        <div class="works-item__body">
+                           <h2 class="works-item__title">Designing Dashboards</h2>
+                           <ul class="works-item__info">
+                              <li class="year">2020</li>
+                              <li class="categories">Dashboard</li>
+                           </ul>
+                           <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                              consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                     </article>
+                     <article class="works-item">
+                        <div class="works-item__img">
+                           <a href="#">
+                              <img src="/img/section featured-works/img-works2.jpg" alt="Works№2">
+                           </a>
+                        </div>
+                        <div class="works-item__body">
+                           <h2 class="works-item__title">Vibrant Portraits of 2020</h2>
+                           <ul class="works-item__info">
+                              <li class="year">2018</li>
+                              <li class="categories">Illustration</li>
+                           </ul>
+                           <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                              consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                     </article>
+                     <article class="works-item">
+                        <div class="works-item__img">
+                           <a href="#">
+                              <img src="/img/section featured-works/img-works3.jpg" alt="Works№3">
+                           </a>
+                        </div>
+                        <div class="works-item__body">
+                           <h2 class="works-item__title">36 Days of Malayalam type</h2>
+                           <ul class="works-item__info">
+                              <li class="year">2018</li>
+                              <li class="categories">Typography</li>
+                           </ul>
+                           <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                              consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+
+
+            </div>
+         </section>
+
+      </main>
+      <footer id="footer">
+         <div class="footer__container">
+            <ul class="socials">
+               <li>
+                  <a href="#" class="facebook-link">
+                     <img src="/img/footer/fb-img.png" alt="facebook" />
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="instagram-link">
+                     <img src="/img/footer/insta-img.png" alt="instagram" />
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="twitter-link">
+                     <img src="/img/footer/twitter-img.png" alt="twitter" />
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="linkedin-link">
+                     <img src="/img/footer/linkedin-img.png" alt="linkedin" />
+                  </a>
+               </li>
+            </ul>
+            <span class="copyright">Copyright ©2020 All rights reserved </span>
+         </div>
+
+      </footer>
 
    </div>
+   <script>
+      jQuery(function () {
+         $(".menu-btn").click(function () {
+            // $(this).toggleClass("active");
+            // $("#header").toggleClass('open-menu');
+            $(".header__menu").slideToggle();
+         });
+      });
+   </script>
 
 </body>
 

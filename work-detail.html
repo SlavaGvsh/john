@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="/css/style.css">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+   <title>Work Detail</title>
+</head>
+
+<body>
+   <div id="wrapper">
+      <header id="header">
+         <div class="header__container1">
+            <div class="menu-btn-holder">
+               <span class="menu-btn">
+                  <span class="material-icons">
+                     menu
+                  </span>
+               </span>
+            </div>
+            <nav class="header__menu menu">
+               <ul class="menu__list">
+                  <li class="menu__item">
+                     <a href="index.html" class="menu__link">Home</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="works.html" class="menu__link activ">Works</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="blog.html" class="menu__link">Blog</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">Contact</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <main id="main">
+         <div class="work-detail">
+            <div class="work-detail__container-works">
+               <h2 class="work-detail__title">
+                  Designing Dashboards with usability in mind
+               </h2>
+               <ul class="work-detail__info">
+                  <li class="year">2020</li>
+                  <li class="categories">Dashboard, User Experience Design</li>
+               </ul>
+               <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                  consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+               <div class="work-detail__img">
+                  <img src="/img/work-detail/work-detail-img1.jpg" alt="work-detail__img">
+               </div>
+               <h3>Heading 1</h3>
+               <h4>Heading 2</h4>
+               <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                  consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+               <div class="work-detail__img">
+                  <img src="/img/work-detail/work-detail-img2.jpg" alt="work-detail__img">
+               </div>
+               <div class="work-detail__img">
+                  <img src="/img/work-detail/work-detail-img3.jpg" alt="work-detail__img">
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer id="footer">
+         <div class="footer__container">
+            <ul class="socials">
+               <li>
+                  <a href="#" class="facebook-link">
+                     <img src="/img/footer/fb-img.png" alt="facebook" />
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="instagram-link">
+                     <img src="/img/footer/insta-img.png" alt="instagram" />
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="twitter-link">
+                     <img src="/img/footer/twitter-img.png" alt="twitter" />
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="linkedin-link">
+                     <img src="/img/footer/linkedin-img.png" alt="linkedin" />
+                  </a>
+               </li>
+            </ul>
+            <span class="copyright">Copyright ©2020 All rights reserved </span>
+         </div>
+
+      </footer>
+
+   </div>
+   <script>
+      jQuery(function () {
+         $(".menu-btn").click(function () {
+            // $(this).toggleClass("active");
+            // $("#header").toggleClass('open-menu');
+            $(".header__menu").slideToggle();
+         });
+      });
+   </script>
+
+</body>
+
+</html>
